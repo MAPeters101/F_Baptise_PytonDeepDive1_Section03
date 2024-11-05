@@ -39,15 +39,15 @@ print(a is b)
 print(a == b)
 print()
 
-a = 'hello'
-b = 'hello'
+print(hex(id(None)))
+print(type(None))
+a = None
+b = None
+c = None
+print(hex(id(None)))
 print(hex(id(a)))
 print(hex(id(b)))
-print(a is b)
-print(a == b)
-print()
-
-
+print(hex(id(c)))
 
 
 
