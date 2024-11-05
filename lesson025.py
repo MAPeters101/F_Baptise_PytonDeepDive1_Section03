@@ -43,3 +43,15 @@ f = select_function(2)
 print(f is cube)
 print(f(2))
 print()
+
+print(select_function(2)(3))
+
+print()
+
+def exec_function(fn, n):
+    return fn(n)
+
+print(exec_function(cube, 3))
+
+
+
