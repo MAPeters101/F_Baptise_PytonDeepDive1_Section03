@@ -20,6 +20,15 @@ print('my_list # = {0}'.format(hex(id(my_list))))
 modify_list(my_list)
 print('my_list # = {0}'.format(hex(id(my_list))))
 print(my_list)
+print('='*10)
 
+def modify_tuple(t):
+    print('Initial t # = {0}'.format(hex(id(t))))
+    t[0].append(100)
+    print('Final t # = {0}'.format(hex(id(t))))
 
+my_tuple = ([1, 2], 'a')
+print('my_tuple # = {0}'.format(hex(id(my_tuple))))
+modify_tuple(my_tuple)
+print('my_tuple # = {0}'.format(hex(id(my_tuple))))
 
